@@ -7,7 +7,7 @@ import SpeechBubbleEmail from './SpeechBubbleEmail'
 
 const Footer = () => {
 	const openMailTo = () => {
-		window.open('mailto:piasmithrichling@gmail.com?subject=Hi Pia | Contact')
+		window.open('mailto:piasmithrichling@gmail.com?subject=Hi Pia! | Inquiry')
 
 	}
   return (
