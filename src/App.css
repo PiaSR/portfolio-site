@@ -579,9 +579,6 @@ p {
     right: 27.53%;
     top: clamp(57%, 58%, 59%);
     bottom: 17.78%;
-    text-wrap: wrap;
-    display: block;
-    max-width: 50%;
 
     font-family: "Outfit";
     font-style: normal;
@@ -590,6 +587,8 @@ p {
     line-height: 1.2rem;
     display: flex;
     align-items: center;
+    text-wrap: wrap;
+    max-width: 50%;
 
     color: var(--secondary-color);
 
