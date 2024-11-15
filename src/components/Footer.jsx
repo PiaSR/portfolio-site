@@ -20,7 +20,7 @@ const Footer = () => {
 		
 			 onClick={openMailTo}
 			 />
-			<SpeechBubbleEmail className={"speech-bubble"} />
+		<SpeechBubbleEmail className={"speech-bubble"} />
 		<Logo className={"logo logo-light"}/>
 		
 	</div>

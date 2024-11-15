@@ -455,7 +455,7 @@ p {
 
 /* FOOTER */
 .footer--container {
-  position: relative;
+  /* position: relative; */
   background-color: var(--primary-color);
   padding: 3rem 1rem;
   margin-top: clamp(4rem, 5vw, 18rem);
@@ -560,39 +560,35 @@ p {
   /* only show speech bubble in footer on desktop */
   .speech-bubble {
     display: contents;
-    max-width: 50%;
+    position: relative;
+    background-color: red;
   }
   .bubble {
     /* speech bubble svg*/
     position: absolute;
-    left: 56.15%;
-    right: 26.15%;
+    left: 55.8%;
     top: 55.79%;
-    bottom: 13.35%;
     stroke: var(--secondary-color);
   }
 
   .bubble-text {
     /* wanna go manual? piasmithrichling@gmail.com */
-
     position: absolute;
-    left: clamp(56.65%, 59%, 60%);
-    right: 27.53%;
-    top: clamp(57%, 58%, 59%);
-    bottom: 17.78%;
+    left: 57.5%;
+    top: 65%;
 
     font-family: "Outfit";
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.2rem;
-    display: flex;
-    align-items: center;
-    text-wrap: wrap;
 
     color: var(--secondary-color);
 
     transform: rotate(-11.45deg);
+  }
+  .bubble-text > span {
+    display: block;
   }
 }
 
