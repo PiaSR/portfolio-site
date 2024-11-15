@@ -335,6 +335,8 @@ p {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem 0;
+  max-height: 28rem;
+  align-self: center;
 }
 
 .card--text-header {
@@ -561,7 +563,6 @@ p {
   .speech-bubble {
     display: contents;
     position: relative;
-    background-color: red;
   }
   .bubble {
     /* speech bubble svg*/
