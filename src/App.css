@@ -253,6 +253,10 @@ p {
   margin-top: clamp(-3rem, -5.5vw, -1.15rem);
 }
 
+.hero--projects {
+  padding: 0;
+}
+
 /* PROJECTS SECTION */
 .projects {
   margin-top: 4rem;
@@ -261,7 +265,6 @@ p {
   display: flex;
   flex-direction: column;
   padding: clamp(1.5rem, 5vw, 4rem) clamp(1.3rem, 5vw, 8rem);
-  /* margin-top: 10rem; */
 }
 .projects--header {
   margin-left: 20px;
@@ -360,6 +363,10 @@ p {
   padding: 0.4rem 0;
   height: 2.4rem;
   margin: 0.5rem 0;
+}
+
+.card--icon {
+  padding: 0;
 }
 .card--buttons {
   display: flex;

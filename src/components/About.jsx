@@ -1,4 +1,4 @@
-import React, { useEffect  } from 'react'
+import React, { useEffect, forwardRef  } from 'react'
 import { useNavigate } from 'react-router-dom'
 import logoFigma from '/src/assets/svg_color/logoFigma.svg'
 import logoAdobeIllustrator from "/src/assets/svg_color/logoAdobeIllustrator.svg"
@@ -18,14 +18,15 @@ import AnimateOnScroll from './AnimateOnScroll'
 import ScrollDownIcon from './ScrollDownIcon'
 
 
-const About = ({isLargeScreen}) => {
+const About = forwardRef(({scrollToSection, isLargeScreen}, ref) => {
   const navigate = useNavigate();
+  
   useEffect(()=>{
 		window.scrollTo(0,0);
 	  },[])
 
   return (
-	<div id="about" className='about'>
+	<div id="about" className='about' >
     <div className='about--container'>
       <div className='about--hero'>
     <h3>Are we a match?</h3>
@@ -40,10 +41,10 @@ const About = ({isLargeScreen}) => {
       />
 
     
-    <ScrollDownIcon className={"scroll-down-icon scroll-about"} />
+    <ScrollDownIcon className={"scroll-down-icon scroll-about"} onClick={() => scrollToSection()}/>
 
       </div>
-    <div className='about--description'>
+    <div className='about--description' ref={ref}>
       
       <AnimateOnScroll>
       <h2 className='about--description-header'>The Person</h2>
@@ -107,6 +108,6 @@ Check out some projects...</h4>
     </div>
   </div >
   )
-}
+});
 
 export default About

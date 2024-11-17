@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonArrowRight from './buttons/ButtonArrowRight'
 import AnimateOnScroll from './AnimateOnScroll'
 
-const ProjectCard = ({ title, description, siteLink, githubLink, toolIcon1, toolIcon2, toolIcon3, tags, img}) => {
+const ProjectCard = ({ title, description, siteLink, githubLink, toolIcon1, toolIcon2, toolIcon3, toolIcon4, tags, img, title1, title2, title3, title4}) => {
 	const tagItem = tags.map(item => <div className='card--tag' key={item}>{item}</div>)
 	
   return (
@@ -21,9 +21,10 @@ const ProjectCard = ({ title, description, siteLink, githubLink, toolIcon1, tool
 			<h4 className='card--text-header'>{title}</h4>
 				<div className='card--text-icons'>
 					{/* {toolIcon} */}
-					<img src={toolIcon1} className="card--icon"/>
-					<img src={toolIcon2} className="card--icon"/>
-					<img src={toolIcon3} className="card--icon"/>
+					<img src={toolIcon1} className="card--icon" title={title1}/>
+					<img src={toolIcon2} className="card--icon" title={title2}/>
+					<img src={toolIcon3} className="card--icon" title={title3}/>
+					<img src={toolIcon4} className="card--icon" title={title4}/>
 				</div>
 		<div className='card--text-container'>
 		<p className='card--description'>{description}</p>

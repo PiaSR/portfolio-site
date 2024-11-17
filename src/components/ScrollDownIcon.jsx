@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ScrollDownIcon = ({className}) => {
+const ScrollDownIcon = ({className, onClick}) => {
   return (
-	<div className={className}></div>
+	<div className={className} onClick={onClick}></div>
   )
 }
 
