@@ -275,10 +275,9 @@ p {
   flex-direction: column;
 }
 .projects--card-collection-row {
-  display: flex;
-
-  flex-direction: row;
-  row-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: auto;
 }
 
 /* INDIVIDUAL PROJECT CARD SECTION */
@@ -308,6 +307,9 @@ p {
   border-radius: 16px;
 }
 
+/* .projects--card-collection-row > .animate-onscroll-visible > .card--container {
+  min-height: 5rem;
+} */
 .projects--card-collection-row
   > .animate-onscroll-visible
   > .card--container
