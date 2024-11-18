@@ -8,9 +8,9 @@ import logoMonoTailwind from '/src/assets/svg_mono/logoMonoTailwind.svg'
 import logoMonoFigma from '/src/assets/svg_mono/logoMonoFigma.svg'
 import logoMonoGithub from '/src/assets/svg_mono/logoMonoGithub.svg'
 import strengthfin from '/src/assets/images/strengthfin.png'
-import portfolio from '/src/assets/images/portfolio.png'
-import triviafin from '/src/assets/images/triviafin.png'
-import snakegamefin from '/src/assets/images/snakegamefin.png'
+import portfoliosite from '/src/assets/images/portfoliosite.png'
+import quizfin from '/src/assets/images/quizfin.png'
+import snakefin from '/src/assets/images/snakefin.png'
 
 function ProjectsCollection({ className }) {
 
@@ -21,7 +21,7 @@ function ProjectsCollection({ className }) {
 				title={"Strength Training Tracker (Coming Soon!)"}
 				img={strengthfin}
 				description={"Work in progress! I'm currently working on a strength training tracking app, where you can track your workouts and easily see the progress you make in your weight lifting journey."}
-				// toolIcons={[{logoReact}, {logoTailwind}, {logoGithub}]}
+		
 				toolIcon1={logoMonoReact}
 				title1={"React JS"}
 				toolIcon2={logoMonoTailwind}
@@ -32,7 +32,7 @@ function ProjectsCollection({ className }) {
 			<ProjectCard
 
 				title={"Trivia Game"}
-				img={triviafin}
+				img={quizfin}
 				description={"A trivia quiz application, built in React and using the Open Trivia API. Interactive interface made with CSS. Project inspired by Scrimba’s Learn React Course."}
 				siteLink={"https://piasr.github.io/trivia-quiz/"}
 				githubLink={"https://github.com/PiaSR/trivia-quiz"}
@@ -49,7 +49,7 @@ function ProjectsCollection({ className }) {
 			<ProjectCard
 
 				title={"Snake Game"}
-				img={snakegamefin}
+				img={snakefin}
 				description={"Classic Snake Game built with vanilla Javascript. With score counter, arrow key navigation, Game Over notification and Restart button. (Desktop only) "}
 				siteLink={"https://piasr.github.io/snake-game/"}
 				githubLink={"https://github.com/PiaSR/snake-game.git"}
@@ -65,9 +65,11 @@ function ProjectsCollection({ className }) {
 			<ProjectCard
 
 			title={"Personal Portfolio Site"}
-			img={portfolio}
+			img={portfoliosite}
 			description={"This site! My responsive personal portoflio website, designed in Figma, to showcase projects I've built during my front-end dev learning journey. Built in React, using CSS for styling."}
 			// toolIcons={[{logoReact}, {logoTailwind}, {logoGithub}]}
+	
+			githubLink={"https://github.com/PiaSR/portfolio-site.git"}
 			toolIcon1={logoMonoReact}
 			title1={"React JS"}
 			toolIcon2={logoMonoCSS}

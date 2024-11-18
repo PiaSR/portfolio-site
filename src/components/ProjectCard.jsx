@@ -31,20 +31,22 @@ const ProjectCard = ({ title, description, siteLink, githubLink, toolIcon1, tool
 		</div>
 		<div className='card--buttons'>
 		
-		<ButtonArrowRight
+		{githubLink && <ButtonArrowRight
 			
 			link={githubLink}
 			value={"learn more"} 
 			classNameBtn={'button button--light'}
 			
-		/>
-		<ButtonArrowRight 
+		/>}
+		
+		{siteLink && <ButtonArrowRight 
 			
 			link={siteLink}
 			value={"view site"} 
 			classNameBtn={'button button--dark'}
 			
-			 />
+			 />}
+		
 		</div>
 	</div>
 	</div>
