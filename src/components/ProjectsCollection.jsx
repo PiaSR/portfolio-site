@@ -7,6 +7,7 @@ import logoMonoCSS from '/src/assets/svg_mono/logoMonoCSS.svg'
 import logoMonoTailwind from '/src/assets/svg_mono/logoMonoTailwind.svg'
 import logoMonoFigma from '/src/assets/svg_mono/logoMonoFigma.svg'
 import logoMonoGithub from '/src/assets/svg_mono/logoMonoGithub.svg'
+import logoMonoAstro from '/src/assets/svg_mono/logoMonoAstro.svg'
 import strengthfin from '/src/assets/images/strengthfin.png'
 import portfoliosite from '/src/assets/images/portfoliosite.png'
 import quizfin from '/src/assets/images/quizfin.png'
@@ -16,6 +17,22 @@ function ProjectsCollection({ className }) {
 
 	return (
 		<div className={className}>
+			<ProjectCard
+
+title={"VF Immobilien"}
+img={quizfin}
+description={"A custom-coded site for a real-estate management company based in Vienna, built in Astro. With a custom CMS built in Sanity, the site includes a property search function for clients to easily browse properties for rent and sale."}
+siteLink={"https://vf-immobilien.at"}
+
+toolIcon1={logoMonoAstro}
+title1={"Astro"}
+toolIcon2={logoMonoJavascript}
+title2={"Javascript"}
+toolIcon3={logoMonoCSS}
+title3={"CSS3"}
+toolIcon4={logoMonoFigma}
+title4={"Figma"}
+tags={["custom CMS", "dynamic search", "email service"]} />
 			<ProjectCard
 
 				title={"Strength Training Tracker (Coming Soon!)"}
