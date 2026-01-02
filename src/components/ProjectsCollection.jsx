@@ -12,6 +12,7 @@ import strengthfin from '/src/assets/images/strengthfin.png'
 import portfoliosite from '/src/assets/images/portfoliosite.png'
 import quizfin from '/src/assets/images/quizfin.png'
 import snakefin from '/src/assets/images/snakefin.png'
+import vfimmoimg from '/src/assets/images/vfimmoimg.png'
 
 function ProjectsCollection({ className }) {
 
@@ -20,7 +21,7 @@ function ProjectsCollection({ className }) {
 			<ProjectCard
 
 title={"VF Immobilien"}
-img={quizfin}
+img={vfimmoimg}
 description={"A custom-coded site for a real-estate management company based in Vienna, built in Astro. With a custom CMS built in Sanity, the site includes a property search function for clients to easily browse properties for rent and sale."}
 siteLink={"https://vf-immobilien.at"}
 
